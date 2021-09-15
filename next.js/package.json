@@ -1,0 +1,32 @@
+{
+  "name": "live-nextjs-auth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-keycloak/ssr": "^3.3.0",
+    "axios": "^0.21.4",
+    "cookie": "^0.4.1",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "keycloak-js": "^15.0.2",
+    "next": "11.1.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "swr": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.4.1",
+    "@types/js-cookie": "^2.2.7",
+    "@types/jsonwebtoken": "^8.5.5",
+    "@types/react": "17.0.20",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.2",
+    "typescript": "4.4.2"
+  }
+}

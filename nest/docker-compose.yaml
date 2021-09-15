@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    entrypoint: dockerize -wait tcp://db:3306 -timeout 40s ./entrypoint.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/home/node/app
+    extra_hosts: 
+      - "host.docker.internal:172.17.0.1"
+    depends_on: 
+      - db
+
+  db:
+    build: ./.docker/mysql
+    restart: always
+    tty: true
+    volumes:
+      - ./.docker/dbdata:/var/lib/mysql
+    environment:
+      - MYSQL_DATABASE=fin
+      - MYSQL_ROOT_PASSWORD=root
+
+# //etc/hosts 
+# //C:\Windows\system32\drivers\etc\hosts
+
+# 127.0.0.1 host.docker.internal
+
+  
