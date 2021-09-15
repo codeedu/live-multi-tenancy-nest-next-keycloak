@@ -1,43 +1,27 @@
+![Imersão Full Stack && Full Cycle](https://events-fullcycle.s3.amazonaws.com/events-fullcycle/static/site/img/grupo_4417.png)
 
+Participe gratuitamente: https://imersao.fullcycle.com.br/
 
-Front-end - Next.js
-Back-end -  Nest.js
+## Sobre o repositório
+Esse repositório contém o código-fonte ministrado nas aulas 
 
+* Aplicações Multi-tenancy usando Nest.js e Keycloak: [https://www.youtube.com/watch?v=6vu5SkEMG-w](https://www.youtube.com/watch?v=6vu5SkEMG-w)
 
-### Open ID Connect
+* Usando Keycloak para autenticar aplicações Next.js e Nest.js [https://www.youtube.com/watch?v=A3ZItE_sqOA](https://www.youtube.com/watch?v=A3ZItE_sqOA)
 
-Spotify - Facebook --- Facebook Spotify
+## Rodar as aplicações
 
-### OAuth2 - Autorização
+O Nest.js e Next.js dependem do Keycloak, por isso é necessário subir o Keycloak com o comando `docker-compose up`.
 
-resource owner - luiz
+Veja a 1ª primeira aula para configurar corretamente o Keycloak.
 
-client - spotify
+Suba depois o Nest.js e depois o Next.js, ambos com o comando `docker-compose up`.
 
-resource server - facebook
+Execute os comandos:
 
-authorization server - facebook
+```bash
+docker-compose up
+```
 
-access_token | login
+Acesse no browser http://localhost:3001/login.
 
-Open ID Connect = OAuth 2 + login
-
-
-### SAML2 - auth server, xml
-
-Conectar - Azure, Google Cloud, LDAP
-
-# FreeMarker - Java
-
-
-# tabelas
-
-# transactions - conta a pagar e conta a receber, account_id
-
-# accounts - id, nome, saldo, subdomain
-
-# Open ID Connect
-
-# Front-end
-
-# keycloak-js
